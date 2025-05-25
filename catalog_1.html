@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="left-section"></div>
+    <div id="middle-section">
+      <div id="book-info">
+        <div id="book-navigation">
+          <button id="prev-book">&lt;</button>
+          <div id="book-details">
+            <h2 id="bookname"></h2>
+            <p><strong>Author:</strong> <span id="author"></span></p>
+            <p><strong>Publisher:</strong> <span id="publisher"></span></p>
+            <p><strong>Book ID:</strong> <span id="bookid"></span></p>
+          </div>
+          <button id="next-book">&gt;</button>
+        </div>
+        <div id="image-container">
+          <button id="prev-image" class="image-nav">&lt;</button>
+          <img id="book-image" src="" alt="Book Image" />
+          <button id="next-image" class="image-nav">&gt;</button>
+        </div>
+      </div>
+    </div>
+    <div id="right-section"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
